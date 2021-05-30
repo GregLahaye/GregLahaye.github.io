@@ -15,7 +15,9 @@
           "https://api.github.com/repos/GregLahaye/GregLahaye.github.io/git/trees/main";
         const response = await fetch(url);
         const data = await response.json();
-        const paths = data.tree.map((file) => file.path);
+        const paths = data.tree
+          .map((file) => file.path)
+          .filter((path) => path.endsWith(".md"));
 
         const list = document.getElementById("list");
         for (const path of paths) {
