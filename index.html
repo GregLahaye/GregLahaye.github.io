@@ -19,10 +19,11 @@
 
         const list = document.getElementById("list");
         for (const path of paths) {
-          const textNode = document.createTextNode(path.replace(".md", ""));
+          const href = path.replace(".md", "");
+          const textNode = document.createTextNode(href);
 
           const anchor = document.createElement("a");
-          anchor.href = path;
+          anchor.href = href;
           anchor.appendChild(textNode);
 
           const listItem = document.createElement("li");
