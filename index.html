@@ -19,7 +19,7 @@
 
         const list = document.getElementById("list");
         for (const path of paths) {
-          const textNode = document.createTextNode(path);
+          const textNode = document.createTextNode(path.replace(".md", ""));
 
           const anchor = document.createElement("a");
           anchor.href = path;
