@@ -17,9 +17,7 @@ namespace Bakery.Services
 {
     public interface ICurrentUserService
     {
-        Task<ApplicationUser> GetCurrentUserAsync();
-
-        Task<Business> GetBusinessAsync();
+        Task<IdentityUser> GetCurrentUserAsync();
     }
 }
 ```
