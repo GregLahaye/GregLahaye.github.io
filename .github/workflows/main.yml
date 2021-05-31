@@ -33,7 +33,9 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Commit file
         run: |
-          git config --local user.name  ${{ github.actor }}
-          git add .
-          git commit -m "Update hello.txt"
-          git push
+          if [ -n "$(git status --porcelain)" ]; then
+            git config --local user.name  ${{ github.actor }}
+            git add .
+            git commit -m "Update hello.txt"
+            git push
+          fi
