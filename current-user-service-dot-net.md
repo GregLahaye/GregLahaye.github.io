@@ -110,7 +110,7 @@ namespace Bakery.Pages
 }
 ```
 
-_Note:_ be careful to specify the interface, not the implementation, of the service (ICurrentUserService, not CurrentUserService
+_Note:_ be careful to specify the interface, not the implementation, of the service (you want ICurrentUserService, not CurrentUserService)
 
 ---
 
