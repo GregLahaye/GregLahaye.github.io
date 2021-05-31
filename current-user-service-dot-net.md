@@ -1,4 +1,4 @@
-# Get the Current User in .NET 5
+# Getting the Current User in a .NET 5 Web App
 
 _In this tutorial we will be creating a simple service and using dependency injection to produce a reuseable way of accessing the current user in .NET 5_
 
