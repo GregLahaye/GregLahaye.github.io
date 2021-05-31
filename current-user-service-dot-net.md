@@ -33,8 +33,8 @@ namespace Bakery.Services
 {
     public class CurrentUserService : ICurrentUserService
     {
-        private readonly IHttpContextAccessor \_httpContextAccessor;
-        private readonly UserManager<IdentityUser> \_userManager;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly UserManager<IdentityUser> _userManager;
 
         public CurrentUserService(
             IHttpContextAccessor httpContextAccessor,
