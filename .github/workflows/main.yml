@@ -36,6 +36,6 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git config --local user.name  ${{ github.actor }}
             git add .
-            git commit -m "Update hello.txt"
+            git commit -m "Update index.md"
             git push
           fi
