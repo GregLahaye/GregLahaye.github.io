@@ -126,7 +126,8 @@ To get around this, you can run `npm run css:watch` in another terminal to rebui
 
 ---
 
-I've created an example project here: https://github.com/GregLahaye/TailwindWebApp
+[I've created an example project here](https://github.com/GregLahaye/TailwindWebApp)
+
 You can view the commit history to see changes made setting up Tailwind.
 
 
